@@ -1,9 +1,15 @@
 import React from 'react'
+import type { NextPage } from 'next'
+import Layout from '@/components/Layout'
 
-export default function About() {
+const About:NextPage = () => {
   return (
-    <div>
-      <h1>My Name is Saquib Akhter</h1>
-    </div>
+      <Layout title='About DJ Events'>
+        <div>
+            <h1>My Name is Saquib Akhter</h1>
+        </div>
+    </Layout>
   )
 }
+
+export default About;
